@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Valentine?</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: pink;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2em;
+            color: red;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        button {
+            font-size: 1.5em;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        #yes {
+            background-color: lightgreen;
+        }
+        #no {
+            background-color: lightcoral;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <img src="./gun.webp" height="350">
+    <h1>TOO BAD U DON'T HAVE A FUCKING CHOICE FAG</h1>
+    <h1>Will you be my Valentine? 💖</h1>
+    <div class="buttons">
+        <button id="yes"><a href="./index4.html">oke ajde</a></button>
+        <button id="no">NE</button>
+    </div>
+    
+    <script>
+
+        document.getElementById("yes").addEventListener("click", function() {
+            alert("Yay! ❤️ You made my day!");
+        });
+
+        document.getElementById("no").addEventListener("mouseover", function() {
+            let x = Math.random() * (window.innerWidth - this.clientWidth);
+            let y = Math.random() * (window.innerHeight - this.clientHeight);
+            this.style.left = `${x}px`;
+            this.style.top = `${y}px`;
+        });
+
+    </script>
+
+</body>
+</html>
